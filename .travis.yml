@@ -2,8 +2,12 @@ rvm:
   - 2.7
 notifications:
   webhooks: https://coveralls.io/webhook
+script:
+  - rake | tee out.log
+  - ! grep 'OpenSSL::SSL::SSLError' out.log
 jobs:
   include:
+    - dist: precise
     - dist: trusty
     - dist: xenial
     - dist: bionic
