@@ -3,7 +3,7 @@ rvm:
 notifications:
   webhooks: https://coveralls.io/webhook
 script:
-  - script.sh
+  - ./script.sh
 jobs:
   include:
     - dist: precise
