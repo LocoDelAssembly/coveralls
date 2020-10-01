@@ -1,9 +1,10 @@
-dist:
-  - trusty
-  - xenial
-  - bionic
-  - focal
 rvm:
   - 2.7
 notifications:
   webhooks: https://coveralls.io/webhook
+jobs:
+  include:
+    - dist: trusty
+    - dist: xenial
+    - dist: bionic
+    - dist: focal
