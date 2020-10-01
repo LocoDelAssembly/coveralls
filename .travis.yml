@@ -1,0 +1,7 @@
+rvm:
+  - 2.7
+script:
+  - bundle exec test.rb
+notifications:
+  webhooks: https://coveralls.io/webhook
+
