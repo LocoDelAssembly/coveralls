@@ -1,5 +1,6 @@
 rvm:
   - 2.7
+  - 3.0
 notifications:
   webhooks: https://coveralls.io/webhook
 script:
